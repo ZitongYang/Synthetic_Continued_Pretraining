@@ -1,1 +1,2 @@
-# SyntheticContinuedPretraining_EntiGraph
+# Synthetic continued pretraining
+Codebase coming soon!
