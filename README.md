@@ -2,6 +2,8 @@
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/ZitongYang/Synthetic_Continued_Pretraining/blob/main/LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-310/)
+[![Dataset](https://img.shields.io/badge/Dataset-EntiGraph--QuALITY-yellow.svg)](https://huggingface.co/datasets/zitongyang/entigraph-quality-corpus)
+[![Model](https://img.shields.io/badge/Model-Llama--3--8B--EntiGraph-orange.svg)](https://huggingface.co/zitongyang/llama-3-8b-entigraph-quality)
 
 This repository contains the code for the paper [Synthetic Continued Pretraining](https://arxiv.org/pdf/2409.07431).
 
@@ -54,6 +56,7 @@ python data/entigraph.py i
 ```
 
 The resulting synthetic data will be saved in `data/dataset/raw/quality_entigraph_gpt-4-turbo/`.
+We release the generated synthetic data at [https://huggingface.co/datasets/zitongyang/entigraph-quality-corpus](https://huggingface.co/datasets/zitongyang/entigraph-quality-corpus).
 
 ### Step 2: Tokenization
 
@@ -109,6 +112,8 @@ Arguments:
 - `--task_name`: Dataset choice (`quality` for EntiGraph synthetic data, `instruct` for UltraChat instruction tuning data)
 
 The resulting checkpoint will be saved under `ckpts/quality-lr5e-06-rr0.1-epochs2-bs16-wd0.01-warmup0.05-MetaLlama38B`.
+We release the trained model weights at [https://huggingface.co/zitongyang/llama-3-8b-entigraph-quality](https://huggingface.co/zitongyang/llama-3-8b-entigraph-quality).
+
 
 ### Step 5: Evaluation on QuALITY QA Set
 
