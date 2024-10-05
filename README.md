@@ -16,6 +16,7 @@ This codebase implements the entire pipeline for synthetic continued pretraining
 - Evaluation tools for the continually pretrained model
 - Instruction tuning process
 - Interactive chatbot based on the instruction-tuned model
+- Retrieval augmented generation (RAG) using the EntiGraph continually pretrained model
 
 ## Table of Contents
 
@@ -30,7 +31,8 @@ This codebase implements the entire pipeline for synthetic continued pretraining
    - [Step 1: Downloading and Tokenizing the Instruction Tuning Data](#step-1-downloading-and-tokenizing-the-instruction-tuning-data)
    - [Step 2: Instruction Tuning](#step-2-instruction-tuning)
    - [Step 3: Hosting the Chatbot](#step-3-hosting-the-chatbot)
-4. [Citation](#citation)
+4. [Retrieval Augmented Generation (RAG) with EntiGraph CPT](#retrieval-augmented-generation-rag-with-entigraph-cpt)
+5. [Citation](#citation)
 
 ## Installation
 
@@ -166,6 +168,51 @@ python interactive.py
 ```
 
 You can ask questions about QuALITY articles (e.g., Tell me about the article "defining decay down".).
+
+## Retrieval-Augmented Generation (RAG) with EntiGraph CPT
+
+We also test whether the parametric knowledge learned through EntiGraph CPT composes with the non-parametric knowledge accessed through retrieval-augmented generation.
+
+This codebase provides an implementation of a retrieval-augmented generation (RAG) pipeline using the following text embedding and reranking models:
+* Text embedding model: OpenAI's `text-embedding-3-large`
+* Reranking model: Cohere's `rerank-english-v3.0`
+For more details on the retrieval and rerank pipeline, refer to Appendix Section E, "Additional Details on Open-Book Experiments", in [our paper](https://arxiv.org/pdf/2409.07431).
+
+First, set your OpenAI and Cohere API keys:
+1. Set your OpenAI API key in `data/dataset/openai.key`.
+2. Set your Cohere API key in `data/dataset/cohere.key`.
+
+To run evaluation over the QuALITY QA set using the EntiGraph CPT model + RAG pipeline, with tuned hyperparameters:
+```bash
+python evaluation.py --eval_func=eval_quality_qa_with_rag \
+    --model_path=/path/to/entigraph_ckpt \
+    --eval_temperature=0.3 \
+    --embedding_model_path=text-embedding-3-large \
+    --text_split_strategy=recursive \
+    --chunk_size=1024 \
+    --chunk_overlap=0 \
+    --retrieval_max_k=128 \
+    --retrieval_top_k=128 \
+    --rerank_model_path=rerank-english-v3.0 \
+    --rerank_top_k=8 \
+    --retrieved_chunk_order=best_last
+```
+
+To run evaluation using the Llama 3 8B base model + RAG pipeline, with tuned hyperparameters:
+```bash
+python evaluation.py --eval_func=eval_quality_qa_with_rag \ 
+    --model_path=meta-llama/Meta-Llama-3-8B \
+    --eval_temperature=0.1 \
+    --embedding_model_path=text-embedding-3-large \
+    --text_split_strategy=recursive \
+    --chunk_size=1024 \
+    --chunk_overlap=0 \
+    --retrieval_max_k=128 \
+    --retrieval_top_k=128 \
+    --rerank_model_path=rerank-english-v3.0 \
+    --rerank_top_k=16 \
+    --retrieved_chunk_order=best_last
+```
 
 ## Citation
 

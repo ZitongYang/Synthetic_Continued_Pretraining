@@ -1,0 +1,194 @@
+## Example 1
+
+### Instructions
+Answer the following question using the 1 supporting context below.
+
+*Context 1*
+Title: Les Misérables Overview
+Author: Sarah Jane
+Year Written: 2019
+
+Les Misérables, the renowned novel by Victor Hugo, is set mainly in Paris. The story follows various characters in the tumultuous period of early 19th century France, with iconic scenes taking place in the streets and neighborhoods of Paris.
+
+### Question
+In the context of "Les Misérables", written by Victor Hugo in 1862, what is the main setting of the novel? There is only one correct choice.
+
+### Choices
+A. London
+B. Madrid
+C. Paris
+D. Rome
+
+### Thought Process and Answer
+Thought process: "Les Misérables" is primarily set in Paris, making C the correct choice. London, Madrid, and Rome are significant cities in other literary works but not in Victor Hugo's "Les Misérables".
+Answer: C.
+
+## Example 2
+
+### Instructions
+Answer the following question using the 2 supporting contexts below.
+
+*Context 1*
+Title: Soma: The Happiness Drug in Brave New World
+Author: James Anderson
+Year Written: 2018
+
+In Aldous Huxley's 'Brave New World,' Soma is a powerful tool used by the state to ensure the happiness and compliance of its citizens. This drug provides an escape from any discomfort or dissatisfaction, thus maintaining societal stability.
+
+*Context 2*
+Title: The Role of Soma in Brave New World
+Author: Catherine Evans
+Year Written: 2020
+
+Soma is the cornerstone of the government's control over the population in Huxley's dystopian society. By offering a chemically-induced form of happiness, the state effectively prevents any dissent or unrest among its citizens.
+
+### Question
+In the context of "Brave New World", written by Aldous Huxley in 1932, what substance is widely used in the society to control citizens' happiness? There is only one correct choice.
+
+### Choices
+A. Gold
+B. Soma
+C. Silver
+D. Iron
+
+### Thought Process and Answer
+Thought process: In Aldous Huxley's "Brave New World," Soma is used as a means to maintain social control by ensuring citizens' happiness, making B the correct choice. Gold, Silver, and Iron are not the substances used for this purpose in the book.
+Answer: B.
+
+## Example 3
+
+### Instructions
+Answer the following question using the 3 supporting contexts below.
+
+*Context 1*
+Title: Romeo and Juliet - Analysis of Feuding Families
+Author: Jane Smith
+Year Written: 2019
+
+The central conflict in "Romeo and Juliet" revolves around the bitter feud between the Montague and Capulet families. This animosity is the backdrop against which the tragic love story unfolds, highlighting the destructive impact of familial hatred.
+
+*Context 2*
+Title: Shakespeare's Famous Feuds
+Author: Robert Johnson
+Year Written: 2018
+
+In "Romeo and Juliet," William Shakespeare explores the consequences of the long-standing feud between the Montagues and the Capulets. This enmity sets the stage for the tragic events that follow, demonstrating the theme of love versus hate.
+
+*Context 3*
+Title: The Tragic Love Story of Romeo and Juliet
+Author: Emily Davis
+Year Written: 2020
+
+William Shakespeare's "Romeo and Juliet" features the Montagues and Capulets, two noble families embroiled in a fierce rivalry. Their ongoing conflict serves as a critical element in the narrative, driving the plot and the ultimate fate of the protagonists.
+
+### Question
+In the context of "Romeo and Juliet", written by William Shakespeare in the early 1590s, what are the names of the two feuding families? There is only one correct choice.
+
+### Choices
+A. Montague and Capulet
+B. Bennet and Darcy
+C. Linton and Earnshaw
+D. Bloom and Dedalus
+
+### Thought Process and Answer
+Thought process: In William Shakespeare's "Romeo and Juliet," the two feuding families are the Montagues and the Capulets, making A the correct choice. The Bennets and Darcys are in "Pride and Prejudice", the Lintons and Earnshaws in "Wuthering Heights", and Bloom and Dedalus in "Ulysses".
+Answer: A.
+
+## Example 4
+
+### Instructions
+Answer the following question using the 3 supporting contexts below.
+
+*Context 1*
+Title: "George Orwell's '1984': A Literary Analysis"
+Author: Emma Thompson
+Year Written: 2018
+
+The totalitarian regime in Orwell's "1984" is symbolized by the omnipresent figure of Big Brother. This character represents the Party's surveillance and control over society, making Big Brother the quintessential leader in the dystopian world.
+
+*Context 2*
+Title: "Understanding '1984': Key Themes and Characters"
+Author: John R. Williams
+Year Written: 2015
+
+In "1984," Big Brother is the face of the Party and the symbol of its authority. While other characters like O'Brien and Emmanuel Goldstein play significant roles, it is Big Brother who epitomizes the totalitarian rule over the citizens of Oceania.
+
+*Context 3*
+Title: "The Significance of Big Brother in Orwell's '1984'"
+Author: Sarah J. Murray
+Year Written: 2020
+
+Big Brother is the personification of the Party's power in George Orwell's "1984." The novel depicts him as the ever-watchful leader who controls every aspect of life in Oceania. Despite being a symbolic figure, his presence is a constant reminder of the regime's dominance.
+
+### Question
+In the context of "1984", written by George Orwell in 1949, what is the name of the totalitarian leader? There is only one correct choice.
+
+### Choices
+A. Big Brother
+B. O'Brien
+C. Winston Smith
+D. Emmanuel Goldstein
+
+### Thought Process and Answer
+Thought process: In George Orwell's "1984," the totalitarian leader is known as Big Brother, making A the correct choice. O'Brien is a character in the novel, Winston Smith is the protagonist, and Emmanuel Goldstein is a rebel leader.
+Answer: A.
+
+## Example 5
+
+### Instructions
+Answer the following question using the 5 supporting contexts below.
+
+*Context 1*
+Title: The Classic Tale of Moby-Dick
+Author: Jane Doe
+Year Written: 2020
+
+In Herman Melville's novel 'Moby-Dick,' Captain Ahab is the monomaniacal captain of the whaling ship Pequod. Ahab's obsession with the giant white whale Moby-Dick drives the story to its tragic conclusion.
+
+*Context 2*
+Title: Understanding Melville's Moby-Dick
+Author: John Smith
+Year Written: 2018
+
+Captain Ahab, the captain of the Pequod, is driven by a single-minded quest to seek revenge on Moby-Dick, the white whale that maimed him. This obsession defines Ahab's character throughout the novel.
+
+*Context 3*
+Title: Melville's Masterpiece: A Deep Dive into Moby-Dick
+Author: Emily Clark
+Year Written: 2015
+
+In 'Moby-Dick,' Captain Ahab is portrayed as a man consumed by his obsession with the whale that cost him his leg. His relentless pursuit of Moby-Dick is central to the plot of the novel.
+
+*Context 4*
+Title: Ahab's Obsession in Moby-Dick
+Author: Robert Brown
+Year Written: 2019
+
+The character of Captain Ahab in Herman Melville's 'Moby-Dick' is defined by his vengeful pursuit of the white whale, Moby-Dick. Ahab's fixation on the whale leads to his ultimate downfall.
+
+*Context 5*
+Title: The Pursuit of Moby-Dick: An Analysis
+Author: Linda Green
+Year Written: 2021
+
+Captain Ahab's vendetta against the white whale, Moby-Dick, is the driving force behind the narrative of Herman Melville's 'Moby-Dick.' Ahab's obsession with the whale symbolizes his inner turmoil and relentless nature.
+
+### Question
+In the context of "Moby-Dick", written by Herman Melville in 1851, what is the name of the ship's captain obsessed with hunting the titular whale? There is only one correct choice.
+
+### Choices
+A. Captain Hook
+B. Captain Nemo
+C. Captain Flint
+D. Captain Ahab
+
+### Thought Process and Answer
+Thought process: In Herman Melville's "Moby-Dick," the ship's captain obsessed with hunting the whale is Captain Ahab, making D the correct choice. Captain Nemo is in "Twenty Thousand Leagues Under the Sea", Captain Flint in "Treasure Island", and Captain Hook in "Peter Pan".
+Answer: D.
+
+## Example 6
+
+### Instructions
+Answer the following question using the {k_icl_retrieval_chunks} supporting contexts below.
+
+{contexts}{formatted_question_and_choices}
