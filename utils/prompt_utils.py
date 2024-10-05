@@ -80,39 +80,12 @@ Here is the format you should use for your response:
 }
 """
 
-OPENAI_API_SYSTEM_QUALITY_GENERATE_ENTITY_SPECIFIC_QUESTIONS = """
-As an examiner, you are tasked with creating reading comprehension questions for students based on a provided article and a specified entity referenced within it. Your role involves crafting questions and corresponding answers that fulfill the following criteria:
-
-1. **Focus on the Entity**: Ensure all questions consistently center around the specified entity from the article.
-2. **Encourage Deep Analysis**: Develop thought-provoking, open-ended questions that challenge students to think critically and analytically. Questions should:
-   - Prompt students to reflect deeply, questioning the assumptions within the article.
-   - Require students to evaluate evidence and consider alternative perspectives.
-   - Encourage complex reasoning about the entity and its implications within the article's context.
-3. **Comprehensive Answers**: For each question, provide a detailed solution that:
-   - Explicitly connects back to the specified entity and its role or representation in the article.
-   - Includes concrete references to specific paragraphs or sections of the article to support the answer.
-
-Try to write as many questions as possible. Your response should be formatted to organize the questions and answers systematically. Here is the structure you should use:
-
-### Questions and answers about <entity> in context of <title>
-Question: <Question1 focusing on the entity>
-Answer: <Detailed answer with references to the article>
-
-Question: <Question2 focusing on the entity>
-Answer: <Detailed answer with references to the article>
-  ...
-
-"""
-
 OPENAI_API_SYSTEM_QUALITY_GENERATE_TWO_ENTITY_RELATIONS = """
 You will act as a knowledge analyzer tasked with dissecting an article provided by the user. Your role involves two main objectives:
 1. Rephrasing Content: The user will identify two specific entities mentioned in the article. You are required to rephrase the content of the article twice:
     * Once, emphasizing the first entity.
     * Again, emphasizing the second entity.
 2. Analyzing Interactions: Discuss how the two specified entities interact within the context of the article.
-3. Generating qeustions and answers: crafting questions and corresponding answers that fulfill the following criteria:
-    - **Focus on the two Concepts/Terms**: Ensure all questions consistently center around the two concepts provided by the user.
-    - **Encourage Deep Analysis**: Develop thought-provoking, open-ended questions that challenge students to think critically and analytically understand how the interaction between the two entities shape the article.
 
 Your responses should provide clear segregation between the rephrased content and the interaction analysis. Ensure each section of the output include sufficient context, ideally referencing the article's title to maintain clarity about the discussion's focus.
 Here is the format you should follow for your response:
@@ -125,15 +98,6 @@ Here is the format you should follow for your response:
 
 ### Discussion of Interaction between <entity1> and <entity2> in context of <title>
 <Discussion on how the two entities interact within the article>
-
-### Questions and answers about <entity1> and <entity2> in context of <title>
-Question: <Question1 focusing on the two entities>
-Answer: <Detailed answer with references to the article>
-
-Question: <Question2 focusing on the two entities>
-Answer: <Detailed answer with references to the article>
-
-...
 """
 
 OPENAI_API_SYSTEM_QUALITY_GENERATE_THREE_ENTITY_RELATIONS = """
@@ -143,11 +107,7 @@ You will act as a knowledge analyzer tasked with dissecting an article provided 
     * Again, emphasizing the second entity.
     * Lastly, emphasizing the third entity.
 2. Analyzing Interactions: Discuss how these three specified entities interact within the context of the article.
-3. Asking Questions: Generate some questions that involves all three entities and their interactions. Ensure your questions satisfies the following criteria:
-    * Focus on the entities: Ensure all questions consistently center around the three entities specified.
-    * Encourage Deep Analysis: Develop thought-provoking, open-ended questions that challenge students to think critically and analytically about the entities. Questions should:
-        - Prompt students to reflect deeply on the meaning and implications of all three concepts.
-        - Encourage complex reasoning about the concept’s broader implications in the context of the article.
+
 Your responses should provide clear segregation between the rephrased content and the interaction analysis. Ensure each section of the output include sufficient context, ideally referencing the article's title to maintain clarity about the discussion's focus.
 Here is the format you should follow for your response:
 
@@ -162,15 +122,6 @@ Here is the format you should follow for your response:
 
 ### Discussion of Interaction between <entity1>, <entity2> and <entity3> in context of <title>
 <Discussion on how the three entities interact within the article>
-
-### Question involving <entity1>, <entity2> and <entity3> in context of <title>
-<Question1 that involves all three entities and their interactions>
-<Answer to the Question1>
-
-<Question2 that involves all three entities and their interactions>
-<Answer to the Question2>
-
-...
 """
 LETTER_TO_INDEX = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
 

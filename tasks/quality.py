@@ -7,7 +7,6 @@ from tasks.task_abc import Question, Document, Task
 from utils.io_utils import jload_list, jload
 from utils.prompt_utils import (format_name, uncapitalize_first, second_last_character,
                                 OPENAI_API_SYSTEM_QUALITY_GENERATE_ENTITIES,
-                                OPENAI_API_SYSTEM_QUALITY_GENERATE_ENTITY_SPECIFIC_QUESTIONS,
                                 OPENAI_API_SYSTEM_QUALITY_GENERATE_TWO_ENTITY_RELATIONS,
                                 OPENAI_API_SYSTEM_QUALITY_GENERATE_THREE_ENTITY_RELATIONS,
                                 QUALITY_FEW_SHOT_COT_PROMPT)
@@ -166,7 +165,6 @@ class QuALITY(Task):
     265
     """
     openai_system_generate_entities = OPENAI_API_SYSTEM_QUALITY_GENERATE_ENTITIES
-    openai_system_generate_entity_specific_questions = OPENAI_API_SYSTEM_QUALITY_GENERATE_ENTITY_SPECIFIC_QUESTIONS
     openai_system_generate_two_entity_relations = OPENAI_API_SYSTEM_QUALITY_GENERATE_TWO_ENTITY_RELATIONS
     openai_system_generate_three_entity_relations = OPENAI_API_SYSTEM_QUALITY_GENERATE_THREE_ENTITY_RELATIONS
     llama_cot_prompt = QUALITY_FEW_SHOT_COT_PROMPT

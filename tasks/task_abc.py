@@ -55,7 +55,6 @@ class Document:
 
 class Task:
     openai_system_generate_entities: str
-    openai_system_generate_entity_specific_questions: str
     openai_system_generate_two_entity_relations: str
     openai_system_generate_three_entity_relations: str
     llama_cot_prompt: str

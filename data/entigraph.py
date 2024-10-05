@@ -31,23 +31,6 @@ def generate_entities(document_content: str,
             print(f"Failed to generate entities: {str(e)}")
     return response
 
-
-def generate_entity_specific_questions(document_content: str,
-                                       entity: str,
-                                       system_message: str,
-                                       openai_model: str):
-    prompt = f"""
-    ### Document Content:
-    {document_content}
-    ### Entities:
-    - {entity}
-    """
-    completion = gptqa(prompt,
-                       openai_model,
-                       system_message)
-    return completion
-
-
 def generate_two_entity_relations(document_content: str,
                                   entity1: str,
                                   entity2: str,
@@ -111,19 +94,7 @@ def generate_synthetic_data_for_document(document_index: str, model_name: str,):
         jdump(output, output_path)
         entities = entities['entities']
 
-    # iterate over entities and generate questions
-    for entity in tqdm(entities):
-        # if _entity_already_generated(entity, output):
-        #     continue
-        response = generate_entity_specific_questions(
-            document.content, entity,
-            task.openai_system_generate_entity_specific_questions,
-            model_name)
-        if response:
-            output.append(response)
-        jdump(output, output_path)
     pair_list = []
-
     # iterate over pairs of entities and generate relations
     for i in range(len(entities)):
         for j in range(i+1, len(entities)):
